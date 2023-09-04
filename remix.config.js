@@ -11,7 +11,9 @@ module.exports = {
   // publicPath: "/build/",
   serverModuleFormat: "cjs",
   future: {
-    v2_dev: true,
+    v2_dev: {
+      port: 8002,
+    },
     v2_errorBoundary: true,
     v2_headers: true,
     v2_meta: true,
@@ -19,4 +21,5 @@ module.exports = {
     v2_routeConvention: true,
   },
   tailwind: true,
+  postcss: true,
 };
